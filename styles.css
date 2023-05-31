@@ -22,7 +22,7 @@ body {
     margin: 0 auto;
   }
 }
-section {
+.container {
   width: 80%;
   max-width: 1140px;
   margin: 0 auto;
@@ -102,11 +102,12 @@ ul {
 
 /* Experience section css */
 .experience {
+  background-color: #fefdf8;
 }
 
 .experience__contentWrapper {
   padding: 10px 0;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   position: relative;
   height: fit-content;
 }
@@ -137,6 +138,7 @@ ul {
   justify-content: center;
 }
 .inner__card {
+  background-color: #ffffff;
   border: 1px solid #d4d4d4;
   /* margin: 20px; */
   margin-right: 0;
