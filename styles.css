@@ -27,6 +27,10 @@ section {
   max-width: 1140px;
   margin: 0 auto;
 }
+ul {
+  list-style-type: none;
+  padding: 0;
+}
 
 .navbar {
   width: 100%;
@@ -92,4 +96,84 @@ section {
 
 /* Experience section css */
 .experience {
+}
+
+.experience__contentWrapper {
+  padding: 10px 0;
+  background-color: #ffffff;
+  position: relative;
+  height: fit-content;
+}
+.experience__contentWrapper:before {
+  content: " ";
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  width: 2.5px;
+  background: #dddddd;
+  left: 50%;
+  margin-left: -1px;
+  /* border: ; */
+}
+.card-right {
+  margin-left: calc(50% + 10px);
+  /* display: flex;
+  justify-content: end; */
+}
+.card {
+  /* margin: 30px 0; */
+  margin-top: 30px;
+  margin-bottom: 30px;
+  /* border-right: 2px solid #e5e5e5; */
+  /* width: 100%; */
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.inner__card {
+  border: 1px solid #d4d4d4;
+  /* margin: 20px; */
+  margin-right: 0;
+  width: 400px;
+  padding: 18px;
+  border-radius: 3px;
+  position: relative;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  /* background-color: #ccc; */
+}
+
+.inner__card:before {
+  position: absolute;
+  top: 12px;
+  right: -13px;
+  display: inline-block;
+  border-top: 13px solid transparent;
+  border-left: 13px dotted #efefef;
+  /* border-right: 0 solid #000000; */
+  border-bottom: 13px solid transparent;
+  content: " ";
+}
+.card__title {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+.card__duration {
+  font-size: 0.8rem;
+  color: #9f9999;
+}
+.card__contentList {
+  padding: 10px 15px;
+  list-style-type: disc;
+}
+
+.card__contentList li {
+  margin-bottom: 10px;
+}
+
+/* Projects section css */
+.project__contentWrapper {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: ; */
 }
