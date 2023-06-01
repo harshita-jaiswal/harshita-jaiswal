@@ -251,18 +251,24 @@ ul {
   margin: 20px 40px 20px 0;
   padding-bottom: 25px;
 }
-.image-cover {
+.project__img {
   object-fit: cover;
+  height: 250px;
+  width: 450px;
 }
 .project__title-icon {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
+.link__icon {
+  height: 22px;
+  width: 22px;
+}
 .project__title {
   padding: 0 20px;
   font-weight: 900;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: #565656;
 }
 .project__desc {
