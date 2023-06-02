@@ -16,11 +16,6 @@ body {
   --orange: #ffa500;
   --light-light-gray: rgba(120, 118, 118, 0.1);
   --light-gray: rgba(120, 118, 118, 0.5);
-  --container: {
-    width: 75%;
-    max-width: 1140px;
-    margin: 0 auto;
-  }
 }
 .container {
   width: 80%;
@@ -197,24 +192,44 @@ ul {
   border: 1px solid #d4d4d4;
   /* margin: 20px; */
   margin-right: 0;
-  width: 400px;
-  padding: 18px;
+  width: 450px;
+  /* padding: 18px 18px 0 0; */
   border-radius: 3px;
   position: relative;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  display: flex;
+  flex-direction: row;
+  /* align-items: baseline; */
   /* background-color: #ccc; */
 }
 
-.inner__card:before {
+/* .inner__card:before {
   position: absolute;
   top: 12px;
   right: -13px;
   display: inline-block;
   border-top: 13px solid transparent;
   border-left: 13px dotted #efefef;
-  /* border-right: 0 solid #000000; */
+  border-right: 0 solid #000000;
   border-bottom: 13px solid transparent;
   content: " ";
+} */
+.card__left {
+  /* width: 200px; */
+  width: 100%;
+}
+.card__right {
+  margin: 10px;
+}
+.flex-column {
+  flex-direction: column;
+}
+.cyware-logo {
+  /* transform: rotate(90deg); */
+  padding: 10px;
+  max-width: 95%;
+  width: inherit;
+  /* width: 100%; */
 }
 .card__title {
   font-weight: 600;
