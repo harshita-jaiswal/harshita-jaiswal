@@ -358,3 +358,25 @@ ul {
 /* .button__reset:hover {
   background-color: var(--gray);
 } */
+
+/* footer section */
+.footer {
+  background: #fec77c;
+  height: 60px;
+  padding: 5px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__logo {
+  background: var(--white);
+  border: 4px solid var(--gray);
+  border-radius: 50%;
+  padding: 5px;
+}
+.footer__icons {
+  display: flex;
+  align-items: center;
+  width: 98px;
+  justify-content: space-around;
+}
