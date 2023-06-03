@@ -40,9 +40,7 @@ ul {
   width: 100%;
   position: fixed;
   z-index: 10;
-  /* right: 0; */
   top: 0;
-  /* position: relative; */
   padding: 0 30px;
   height: 65px;
   box-shadow: 0 0 10px rgb(0 0 0 / 10%);
@@ -56,7 +54,6 @@ ul {
 .menu {
   display: flex;
   align-items: center;
-  /* justify-content: flex-end; */
   width: 33%;
 }
 .menu__listItem {
@@ -69,8 +66,6 @@ ul {
   padding: 10px 0px;
   font-size: 1rem;
   font-weight: 600;
-  /* color: #000000; */
-  /* padding: ; */
 }
 .navLink:hover {
   border-bottom: 2px solid #fec77c;
@@ -93,7 +88,6 @@ ul {
   text-align: center;
   font-size: 2.5rem;
   font-weight: 900;
-  /* height: 30px; */
   margin: 0 auto;
   position: relative;
   bottom: 35px;
@@ -125,8 +119,6 @@ ul {
 
 /* About Me section css */
 .aboutMe {
-  /* padding: 40px 0; */
-  /* height: 1000px; */
   padding-top: 100px;
 }
 .title {
@@ -136,7 +128,6 @@ ul {
   border-bottom: 1.5px solid #9f7171;
   color: #9f7171;
   width: fit-content;
-  /* margin: 0 auto; */
   padding: 8px 30px 8px 0;
   margin-bottom: 20px;
 }
@@ -161,7 +152,6 @@ ul {
 
 .experience__contentWrapper {
   padding: 10px 0;
-  /* background-color: #ffffff; */
   position: relative;
   height: fit-content;
 }
@@ -170,24 +160,17 @@ ul {
   top: 0;
   bottom: 0;
   position: absolute;
-  /* width: 2.5px; */
   border: 1px dashed var(--light-gray);
   background: #dddddd;
   left: 50%;
   margin-left: -1px;
-  /* border: ; */
 }
 .card-right {
   margin-left: calc(50% + 10px);
-  /* display: flex;
-  justify-content: end; */
 }
 .card {
-  /* margin: 30px 0; */
   margin-top: 30px;
   margin-bottom: 30px;
-  /* border-right: 2px solid #e5e5e5; */
-  /* width: 100%; */
   width: 50%;
   display: flex;
   justify-content: center;
@@ -195,17 +178,12 @@ ul {
 .inner__card {
   background-color: #ffffff;
   border: 1px solid #d4d4d4;
-  /* margin: 20px; */
   margin-right: 0;
   max-width: 450px;
-  /* padding: 18px 18px 0 0; */
+  padding: 18px;
   border-radius: 3px;
   position: relative;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-  display: flex;
-  flex-direction: row;
-  /* align-items: baseline; */
-  /* background-color: #ccc; */
 }
 
 /* .inner__card:before {
@@ -219,13 +197,7 @@ ul {
   border-bottom: 13px solid transparent;
   content: " ";
 } */
-.card__left {
-  /* width: 200px; */
-  width: 100%;
-}
-.card__right {
-  margin: 10px;
-}
+
 .flex-column {
   flex-direction: column;
 }
@@ -233,17 +205,14 @@ ul {
   margin-right: 0;
   margin-left: auto;
 }
-.cyware-logo {
-  /* transform: rotate(90deg); */
-  padding: 10px;
-  max-width: 95%;
-  width: inherit;
-  /* width: 100%; */
+.company__logo {
+  width: 95%;
 }
 .card__title {
   font-weight: 600;
   font-size: 1.2rem;
   margin-bottom: 5px;
+  margin-top: 10px;
 }
 .card__duration {
   font-size: 0.8rem;
@@ -260,18 +229,9 @@ ul {
 
 /* Projects section css */
 .project__contentWrapper {
-  /* padding: 30px 0;
-  display: flex;
-  flex-wrap: wrap; */
-
   padding: 30px 0;
   display: grid;
   flex-wrap: wrap;
-  /* justify-content: space-evenly; */
-  /* grid-template-columns: 40px; */
-  /* grid-template-columns: 450px 450px; */
-  /* gap: 10px; */
-  /* grid-auto-flow: column; */
   grid-template-columns: repeat(auto-fill, 450px);
   column-gap: 50px;
   row-gap: 50px;
@@ -284,7 +244,6 @@ ul {
   overflow: hidden;
   border: 2px solid #dbd4d4;
   box-shadow: 0 0 10px rgb(0 0 0 / 10%);
-  /* margin: 20px 40px 20px 0; */
   padding-bottom: 25px;
 }
 .project__img {
@@ -321,7 +280,7 @@ ul {
   justify-content: space-between;
 }
 
-/* connect */
+/* connect form section */
 
 .connect {
   background-color: #fdfcef;
@@ -352,7 +311,6 @@ ul {
   width: 10%;
 }
 .field__input {
-  /* height: 22px; */
   max-width: 70%;
   width: 70%;
   padding: 3px 5px;
@@ -380,9 +338,6 @@ ul {
   font-weight: 600;
   font-size: 1rem;
 }
-/* .button__submit:hover {
-  background-color: var(--violetred);
-} */
 .button__reset {
   width: 48%;
   padding: 10px;
@@ -391,9 +346,6 @@ ul {
   color: #fec77c;
   background-color: var(--white);
 }
-/* .button__reset:hover {
-  background-color: var(--gray);
-} */
 
 /* footer section */
 .footer {
@@ -432,7 +384,6 @@ ul {
     font-size: 1.5rem;
   }
   .experience__contentWrapper {
-    /* display: none; */
     padding-left: 15px;
     padding-right: 15px;
   }
