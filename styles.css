@@ -259,25 +259,37 @@ ul {
 
 /* Projects section css */
 .project__contentWrapper {
-  padding: 30px 0;
+  /* padding: 30px 0;
   display: flex;
+  flex-wrap: wrap; */
+
+  padding: 30px 0;
+  display: grid;
+  flex-wrap: wrap;
   /* justify-content: space-evenly; */
-  /* align-items: ; */
+  /* grid-template-columns: 40px; */
+  /* grid-template-columns: 450px 450px; */
+  /* gap: 10px; */
+  /* grid-auto-flow: column; */
+  grid-template-columns: repeat(auto-fill, 450px);
+  column-gap: 50px;
+  row-gap: 50px;
 }
 
 .project__card {
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
   border-radius: 5px;
   overflow: hidden;
   border: 2px solid #dbd4d4;
   box-shadow: 0 0 10px rgb(0 0 0 / 10%);
-  margin: 20px 40px 20px 0;
+  /* margin: 20px 40px 20px 0; */
   padding-bottom: 25px;
 }
 .project__img {
   object-fit: cover;
   height: 250px;
-  width: 450px;
+  width: 100%;
 }
 .project__title-icon {
   display: flex;
@@ -409,7 +421,6 @@ ul {
   .container {
     width: 100%;
     max-width: 100%;
-    /* padding: 0 30px; */
   }
   .menu {
     display: none;
@@ -432,7 +443,7 @@ ul {
   .title {
     padding: 8px 30px 8px;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 20px;
   }
   .bio {
     order: 2;
@@ -441,5 +452,9 @@ ul {
   .profileImg {
     margin: 0 auto;
     padding: 10px 0;
+  }
+  .project__contentWrapper {
+    padding: 15px;
+    grid-template-columns: repeat(auto-fill, 100%);
   }
 }
