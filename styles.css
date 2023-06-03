@@ -417,7 +417,7 @@ ul {
 }
 
 /* media queries for mobile */
-@media (min-width: 400px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
   .container {
     width: 100%;
     max-width: 100%;
@@ -456,5 +456,8 @@ ul {
   .project__contentWrapper {
     padding: 15px;
     grid-template-columns: repeat(auto-fill, 100%);
+  }
+  .connect__form {
+    width: 80%;
   }
 }
