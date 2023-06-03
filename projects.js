@@ -48,6 +48,21 @@ const createProjectCard = (project) => {
   const linksIcon = document.createElement("div");
   linksIcon.setAttribute("class", "project__linksIcon");
 
+  //   site link icon
+  if (project?.siteLink != "#") {
+    const siteLink = document.createElement("a");
+    siteLink.setAttribute("class", "margin-right-10");
+    siteLink.href = project.siteLink;
+    siteLink.target = "_blank";
+
+    const siteImg = document.createElement("img");
+    siteImg.setAttribute("class", "link__icon");
+    siteImg.src = "./images/link.png";
+    siteImg.alt = "link icon";
+
+    siteLink.append(siteImg);
+    linksIcon.append(siteLink);
+  }
   //   github link icon
   const githubLink = document.createElement("a");
   githubLink.href = project.githubLink;
@@ -58,21 +73,8 @@ const createProjectCard = (project) => {
   githubIcon.src = "./images/github-black.png";
   githubIcon.alt = "github icon";
 
-  //   site link icon
-  const siteLink = document.createElement("a");
-  siteLink.href = project.siteLink;
-  siteLink.target = "_blank";
-
-  const siteImg = document.createElement("img");
-  siteImg.setAttribute("class", "link__icon");
-  siteImg.src = "./images/link.png";
-  siteImg.alt = "link icon";
-
   githubLink.append(githubIcon);
-  siteLink.append(siteImg);
-
   linksIcon.append(githubLink);
-  linksIcon.append(siteLink);
 
   titleIcon.append(title);
   titleIcon.append(linksIcon);

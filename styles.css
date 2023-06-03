@@ -31,6 +31,9 @@ ul {
   padding-top: 35px;
   padding-bottom: 35px;
 }
+.margin-right-10 {
+  margin-right: 10px;
+}
 
 /* Header css */
 .header {
@@ -238,11 +241,13 @@ ul {
 /* Projects section css */
 .project__contentWrapper {
   padding: 30px 0;
-  display: grid;
+  /* display: grid;
   flex-wrap: wrap;
   grid-template-columns: repeat(auto-fill, 450px);
   column-gap: 50px;
-  row-gap: 50px;
+  row-gap: 50px; */
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .project__card {
@@ -253,6 +258,8 @@ ul {
   border: 2px solid #dbd4d4;
   box-shadow: 0 0 10px rgb(0 0 0 / 10%);
   padding-bottom: 25px;
+  flex: 1;
+  margin-right: 30px;
 }
 .project__img {
   object-fit: cover;
@@ -263,13 +270,14 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  padding: 0 20px;
 }
 .link__icon {
   height: 22px;
   width: 22px;
 }
 .project__title {
-  padding: 0 20px;
+  /* padding: 0 20px; */
   font-weight: 900;
   font-size: 1.4rem;
   color: #565656;
@@ -281,10 +289,10 @@ ul {
   color: #625b5b;
 }
 .project__linksIcon {
-  padding: 0 20px;
+  /* padding: 0 20px; */
   display: flex;
   align-items: center;
-  width: 55px;
+  /* width: 55px; */
   justify-content: space-between;
 }
 
@@ -425,7 +433,11 @@ ul {
   }
   .project__contentWrapper {
     padding: 15px 25px;
-    grid-template-columns: repeat(auto-fill, 100%);
+    /* grid-template-columns: repeat(auto-fill, 100%); */
+  }
+  .project__card {
+    flex: 1 0 100%;
+    margin-bottom: 30px;
   }
   .connect__form {
     width: 80%;
