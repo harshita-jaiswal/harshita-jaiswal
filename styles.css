@@ -114,7 +114,8 @@ ul {
     width: 0;
   }
   100% {
-    width: 35.5rem;
+    width: 83%;
+    max-width: 35.5rem;
   }
 }
 
@@ -386,11 +387,13 @@ ul {
     width: 100%;
     max-width: 100%;
   }
-  .menu {
+  .menu li:not(:last-child) {
     display: none;
   }
+  .menu li:last-child {
+    padding: 0;
+  }
   .banner__text {
-    animation: none;
     width: 20rem;
     font-size: 1.5rem;
   }
