@@ -1,6 +1,6 @@
 const Projects = [
   {
-    title: "Book Recommendation",
+    title: "Find Your Next Book",
     img: "book_recommendation.png",
     imgAlt: "photo of book recommendation project's homepage",
     githubLink: "https://github.com/harshita-jaiswal/FindYourNextBook",
