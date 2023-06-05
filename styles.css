@@ -39,7 +39,7 @@ ul {
 .header {
   width: 100vw;
   position: fixed;
-  z-index: 10;
+  z-index: 12;
   top: 0;
   right: 0;
   left: 0;
@@ -92,7 +92,7 @@ ul {
   height: 550px;
 }
 .banner__text {
-  color: #ffffff;
+  color: var(--black);
   width: 35.5rem;
   text-align: center;
   font-size: 2.5rem;
@@ -227,7 +227,7 @@ ul {
 }
 .card__duration {
   font-size: 0.8rem;
-  color: #9f9999;
+  color: var(--gray);
 }
 .card__contentList {
   padding: 10px 15px;
@@ -346,8 +346,10 @@ ul {
   justify-content: space-between;
 }
 .button__submit {
+  /* background-color: #facf7d; */
   background-color: #fec77c;
-  color: var(--white);
+  color: var(--gray);
+  /* color: var(--white); */
   width: 48%;
   padding: 10px;
   border: none;
@@ -358,8 +360,9 @@ ul {
   width: 48%;
   padding: 10px;
   border-radius: 0;
-  border: 1px solid #fec77c;
-  color: #fec77c;
+  border: 1px solid var(--gray);
+  color: var(--gray);
+  /* color: #fec77c; */
   background-color: var(--white);
 }
 
