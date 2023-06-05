@@ -40,7 +40,7 @@ const createProjectCard = (project) => {
   titleIcon.setAttribute("class", "project__title-icon");
 
   //   card title
-  const title = document.createElement("p");
+  const title = document.createElement("h2");
   title.setAttribute("class", "project__title");
   title.textContent = project.title;
 
