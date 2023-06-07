@@ -137,9 +137,8 @@ ul {
   margin-bottom: 20px;
 }
 .aboutMe__contentWrapper {
-  display: flex;
   padding: 10px 0 10px;
-  justify-content: space-between;
+  position: relative;
 }
 .bio {
   font-size: 1.1rem;
@@ -147,7 +146,8 @@ ul {
 }
 .profileImg {
   border-radius: 80%;
-  padding: 0 30px;
+  padding: 30px;
+  float: right;
 }
 
 /* Experience section css */
@@ -386,6 +386,10 @@ ul {
   .aboutMe__contentWrapper {
     flex-direction: column;
     padding: 15px;
+    display: flex;
+  }
+  .profileImg {
+    float: none;
   }
   .banner__img {
     height: 300px;
