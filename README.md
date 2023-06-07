@@ -8,6 +8,7 @@ https://hj7-harshitajaiswal.github.io/
 
 1. MD Bootstrap: https://mdbootstrap.com/docs/standard/extended/timeline/
 2. Image Color Picker: https://redketchup.io/color-picker
+3. CSS Animation: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations
 
 #### Images and Icons
 
