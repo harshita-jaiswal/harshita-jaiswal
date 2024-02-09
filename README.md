@@ -1,6 +1,6 @@
 ## Portfolio Website
 
-https://hj7-harshitajaiswal.github.io/
+[https://hj7-harshitajaiswal.github.io/](https://harshita-jaiswal.github.io/portfolio/)
 
 ### Resources:
 
